@@ -1,0 +1,269 @@
+
+.plans {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.plans-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.plan-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+  background: black;
+  color: white;
+}
+
+.plan-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.plan-price span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.plan-description {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.plan-button {
+  background: white;
+  border: 2px solid black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.highlight-btn {
+  background: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.plan-features li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+@media (max-width: 1024px) {
+  .plans-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* RESET BÁSICO */
+.navbar {
+position: relative;
+top: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 90px;
+border-bottom: 1px solid rgba(24, 10, 10, 0.44);
+background-image: url('img/Footer/Footer.png');
+backdrop-filter: blur(12px);
+gap: 50px;
+z-index: 1000;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+color: #333;
+}
+
+/* --------------------------------------
+ SEÇÃO SUPERIOR (IMAGEM GRANDE)
+-------------------------------------- */
+.unit-hero {
+width: 100%;
+height: 300px; /* Ajuste conforme necessário */
+background-color: #d9d9d9; /* Cinza placeholder da imagem */
+border-radius: 8px;
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #666;
+font-size: 18px;
+position: relative;
+}
+
+/* ÍCONES (SE APARECEREM NO CANTO INFERIOR) */
+.icon-row {
+position: absolute;
+bottom: 10px;
+right: 10px;
+display: flex;
+gap: 8px;
+}
+.icon-placeholder {
+width: 32px;
+height: 32px;
+background-color: #bbb;
+border-radius: 4px;
+}
+
+/* --------------------------------------
+ TÍTULO DA UNIDADE E ENDEREÇO
+-------------------------------------- */
+.unit-info {
+margin-bottom: 20px;
+}
+
+.unit-info h2 {
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 6px;
+}
+
+.unit-info p {
+font-size: 16px;
+color: #666;
+}
+
+/* --------------------------------------
+ CONTAINER PARA AS DUAS BOXES LADO A LADO
+-------------------------------------- */
+.info-wrapper {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+.info-card {
+flex: 1 1 300px;
+border: 1px solid #ccc;
+border-radius: 15px;
+padding: 20px;
+}
+
+.info-card h3 {
+font-size: 18px;
+margin-bottom: 10px;
+color: #333;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.info-card ul {
+list-style: none;
+margin-top: 10px;
+}
+
+.info-card li {
+margin-bottom: 8px;
+color: #555;
+}
+
+.info-card p {
+margin-bottom: 16px;
+line-height: 1.5;
+color: #555;
+}
+
+/* BOTÕES DE TOUR */
+.tour-buttons {
+display: flex;
+gap: 10px;
+}
+
+.tour-buttons button {
+padding: 10px 16px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+background-color: #4CAF50;
+color: #fff;
+font-size: 14px;
+transition: background-color 0.3s;
+}
+
+.tour-buttons button:hover {
+background-color: #45a049;
+}
+
+/* --------------------------------------
+ GRADE DE AULAS
+-------------------------------------- */
+.schedule {
+margin-bottom: 40px;
+}
+
+.schedule h3 {
+font-size: 20px;
+margin-bottom: 20px;
+color: #333;
+}
+
+.table-responsive {
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+min-width: 700px; /* para evitar quebra em telas menores */
+border-collapse: collapse;
+border: 1px solid #eee;
+}
+
+thead {
+background-color: #f5f5f5;
+}
+
+th, td {
+text-align: center;
+padding: 12px;
+border: 1px solid #eee;
+color: #555;
+}
+
+th {
+font-weight: 600;
+color: #333;
+}
+
+/* --------------------------------------
+ RESPONSIVIDADE
+-------------------------------------- */
+@media (max-width: 768px) {
+.info-wrapper {
+  flex-direction: column;
+}
+
+.unit-hero {
+  height: 200px;
+}
+}

@@ -1,0 +1,177 @@
+/* Navbar (exemplo; caso não use, pode remover) */
+.navbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+  border-bottom: 1px solid rgba(24, 10, 10, 0.44);
+  background-image: url('img/Footer/Footer.png');
+  backdrop-filter: blur(12px);
+  gap: 50px;
+  z-index: 1000;
+}
+
+/* Container que agrupa filtro e conteúdo principal */
+.container {
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 20px;
+}
+
+/* Sidebar (filtro) */
+.sidebar {
+  margin-top: 24px;
+  width: 250px;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-right: 20px;
+  height: fit-content; /* para ajustar a altura ao conteúdo */
+}
+.sidebar h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Grupos de filtro */
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+.filter-group h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+.filter-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.filter-group label input {
+  margin-right: 8px;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+}
+
+/* Barra de busca */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.search-bar input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  border: solid 1px #ccc !important;
+}
+.search-bar button {
+    width: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #96C22C; /* Ajuste a cor para algo próximo ao da imagem */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 24px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.search-bar button i {
+  font-size: 14px; /* Tamanho do ícone */
+}
+.search-bar button:hover {
+  background: #96C22C; /* Efeito hover */
+}
+
+/* Disposição dos cards em linha */
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  flex: 0 0 calc(33.333% - 20px);
+  border: 1px solid #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.card-title {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card-text {
+  color: #5D686E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+}
+.btn-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 24px;
+  gap: 8px;
+  border-radius: 20px;
+  background: #E4E9E9;
+  text-decoration: none;
+  color: #333;
+
+  transition: background 0.3s ease;
+}
+.btn-card:hover {
+  background: rgb(195, 197, 197);
+}
+
+/* Responsividade simples */
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .card {
+    flex: 0 0 100%;
+  }
+}
